@@ -1,0 +1,123 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+.hero__section{
+   background: url(./images/OIP.jpeg);
+   min-height: 60vh;
+   background-size: cover;
+   background-position: center;
+   color: white;
+}
+
+.navbar {
+   display: flex;
+   justify-content: space-around;
+   padding: 16px 42px;
+   align-items: center;
+   height: 60px;
+}
+
+.navbar a {
+   color: white;
+   text-decoration: none;
+   font-size: 20px
+}
+
+.navbar__link{
+   display: flex;
+   gap: 28px;
+}
+
+.link_icon{
+   display: flex;
+   width: 25px;
+   height: 25px;
+   border-radius: 100%;
+   border: 2px solid white;
+   display: none;
+}
+
+.hero__section_container{
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   height: calc(60vh - 60px );
+   align-items: center;
+   justify-content: center;
+}
+.hero__section_logo{
+   width: 300px;
+   height: 80px;
+}
+.hero__section_title{
+   text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+.hero__section_container_input{
+  
+  width: 50%;
+    display: flex;
+  align-items: center;
+  border-radius: 30%;
+  gap: 10px;
+   background-color: white;
+}
+   
+.hero__section_location , .hero__section_search{
+   outline: none;
+   border: none;
+}
+.hero__section_location{
+   width: 30%;
+   height: 50px;
+   outline: none;
+   border-radius: 10px 0 0 10px;
+   font-size: 20px;
+}
+.hero__section_search{
+   width: 70%;
+   height: 50px;
+   font-size: 20px;
+   border-radius: 0 10px 10px 0;
+   outline: none;
+}
+.card__container{
+   width: 90%;
+   margin: 35px;
+   display: flex;
+   flex-direction: row;
+   gap: 25px;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+.card__container_image{
+   width: 20%;
+   height: 430px;
+   overflow: hidden;
+   border: 1px solid black;
+   border-radius: 10px;
+   transition: all 0.5s ease;
+}
+.card__container_image:hover{
+   cursor: pointer;
+   transform: scale(1.1);
+}
+.card__container_image img {
+   width: 100%;
+   object-fit: cover;
+   object-position: center;
+}
+.card__container_details {
+   padding: 10px;
+   }
+.card__container_details h3{
+   font-size: 20px;
+   font-weight: 400;
+}
+
